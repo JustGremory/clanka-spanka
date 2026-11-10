@@ -1,0 +1,66 @@
+{
+  "anvil_cost": 1,
+  "description": "Clanker Spanking",
+  "effects": {
+    "minecraft:damage": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 5.0
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:team": "clankers"
+          }
+        }
+      }
+    ],
+    "minecraft:knockback": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": 1.0
+        }
+      }
+    ],
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "attacker",
+        "effect": {
+          "type": "minecraft:all_of",
+          "effects": [
+            {
+              "type": "minecraft:play_sound",
+              "sound": {
+                "sound_id": "clanka_spanka:item.clanka_spanka.whap"
+              },
+              "volume": 1.0,
+              "pitch": 1.0
+            },
+            {
+              "type": "minecraft:run_function",
+              "function": "clanka_spanka:whap"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:iron_sword",
+  "weight": 1
+}
