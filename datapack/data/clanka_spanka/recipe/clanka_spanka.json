@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    "minecraft:leather",
+    "minecraft:leather",
+    "minecraft:iron_nugget"
+  ],
+  "result": {
+    "id": "minecraft:iron_sword",
+    "components": {
+      "minecraft:item_name": "Clanka Spanka",
+      "minecraft:item_model": "clanka_spanka:clanka_spanka",
+      "minecraft:enchantments": {
+        "clanka_spanka:clanker_spanking": 1
+      },
+      "minecraft:enchantment_glint_override": false,
+      "minecraft:lore": [
+        {
+          "text": "for the clankas",
+          "color": "gray"
+        }
+      ]
+    }
+  }
+}
